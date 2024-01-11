@@ -13,7 +13,7 @@ c)	Az előző metódusnak legyen visszatérési értéke, mely a bekért számma
 def beker():
     paros:int=int(input("Adj meg egy páros számot: "))
     while not(paros%2==0):
-        paros:int=int(input("EZ nem páros. páros számot kérek: "))
+        paros:int=int(input("Ez nem páros. páros számot kérek: "))
     return paros
 
 def harmat():

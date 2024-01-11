@@ -35,7 +35,8 @@ def beolvas():
 
 def NY(lista):
     ny_lista=[]
-    nycs_index=0
     for i in range(0, len(lista),1):
         if lista[i].varos=="New York":
-            ny_lista.append(lista[i])
+            ny_lista.append(i)
+      
+    return ny_lista
