@@ -20,15 +20,14 @@ def harmat():
     lista=[]
     for i in range(0, 3, 1):
         paros:int=int(input(f"Kérem a {i+1}. páros számot: "))
-        lista.append(paros)
         while not(paros%2==0):
             paros:int=int(input("Ez nem páros. Páros számot kérek: "))
+        lista.append(paros)
     return lista
 
 def legisebb(lista):
-    lk_index=0
-    min=0
+    lk=0
     for i in range(0, len(lista), 1):
-        if lista[lk_index]<lista[i]:
-            lk_index=i
-    return lk_index
+        if lista[lk]>lista[i]:
+            lk=i
+    return lk

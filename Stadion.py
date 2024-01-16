@@ -1,5 +1,6 @@
 class Stadion:
-    def __init__(self, varos:str, csapat:int, elso:str, utolso:str):
+    def __init__(self, nev:str, varos:str, csapat:int, elso:str, utolso:str):
+        self.nev=nev
         self.varos=varos
         self.csapat=csapat
         self.elso=elso

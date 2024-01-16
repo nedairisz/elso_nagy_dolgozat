@@ -9,13 +9,15 @@ print(paros)
 print()
 print()"""
 
+print("1.feladat/b:")
 lista=elso.harmat()
 print(lista)
-lk_index=elso.legisebb(lista)
-print(f"A legkisebb szám: {lk_index}, helye: {lista[lk_index]} ")
+lk=elso.legisebb(lista)
+print(f"A legkisebb szám: {lista[lk]}, helye: {lk} ")
 print()
 print()
 
+"""
 print("2. FELADAT")
 lista=masodik.veletlenek()
 print(lista)
@@ -39,4 +41,5 @@ ny_lista=harmadik.NY(lista)
 print(ny_lista)
 for i in range(0, len(ny_lista),1):
     index=ny_lista[i]
-    print(f"{lista[index].nev}: {lista[index].cspat} db csapat")
+    print(f"{lista[index].nev}: {lista[index].csapat} db csapat")
+"""

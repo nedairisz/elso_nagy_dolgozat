@@ -26,10 +26,11 @@ def beolvas():
         sorok=nyers_lista[i]
         sor_tag=sorok.strip().split(";")
         nev=sor_tag[0]
-        csapat=sor_tag[1]
-        elso=sor_tag[2]
-        utolso=sor_tag[3]
-        stadion=Stadion(nev, csapat, elso, utolso)
+        varos=sor_tag[1]
+        csapat=sor_tag[2]
+        elso=sor_tag[3]
+        utolso=sor_tag[4]
+        stadion=Stadion(nev, varos, csapat, elso, utolso)
         lista.append(stadion)
     return lista
 
@@ -37,6 +38,5 @@ def NY(lista):
     ny_lista=[]
     for i in range(0, len(lista),1):
         if lista[i].varos=="New York":
-            ny_lista.append(i)
-      
+            ny_lista.append(i)    
     return ny_lista
